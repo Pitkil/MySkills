@@ -1,0 +1,4 @@
+interface:
+  display_name: "Premium README"
+  short_description: "Write polished README files from real code"
+  default_prompt: "Use $premium-readme to rewrite this repository README from the actual codebase."

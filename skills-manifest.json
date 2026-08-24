@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "updated": "2026-08-24",
+  "layout": "skills/<category>/<skill-name>",
+  "defaultTargets": {
+    "agents": "~/.agents/skills",
+    "codex": "~/.codex/skills"
+  },
+  "categories": {
+    "academic-research": "Academic research, literature review, manuscript writing, peer review, and end-to-end paper workflows.",
+    "writing-language": "Copywriting, Chinese text humanization, README writing, and long-form output control.",
+    "frontend-ui-design": "Frontend design, UI polish, design systems, web redesigns, and style-specific interface guidance.",
+    "image-brand-generation": "Image-led design direction, brand-kit generation, mobile/web visual references, and image-to-code workflows.",
+    "tools-productivity": "Utility skills for skill discovery, Office CLI work, and project-specific operational memory."
+  },
+  "skills": [
+    { "name": "academic-paper", "category": "academic-research", "target": "agents", "path": "skills/academic-research/academic-paper" },
+    { "name": "academic-paper-reviewer", "category": "academic-research", "target": "agents", "path": "skills/academic-research/academic-paper-reviewer" },
+    { "name": "academic-pipeline", "category": "academic-research", "target": "agents", "path": "skills/academic-research/academic-pipeline" },
+    { "name": "deep-research", "category": "academic-research", "target": "agents", "path": "skills/academic-research/deep-research" },
+    { "name": "copywriting", "category": "writing-language", "target": "agents", "path": "skills/writing-language/copywriting" },
+    { "name": "full-output-enforcement", "category": "writing-language", "target": "agents", "path": "skills/writing-language/full-output-enforcement" },
+    { "name": "humanizer-zh", "category": "writing-language", "target": "agents", "path": "skills/writing-language/humanizer-zh" },
+    { "name": "premium-readme", "category": "writing-language", "target": "codex", "path": "skills/writing-language/premium-readme" },
+    { "name": "design-taste-frontend", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/design-taste-frontend" },
+    { "name": "design-taste-frontend-v1", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/design-taste-frontend-v1" },
+    { "name": "frontend-design", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/frontend-design" },
+    { "name": "gpt-taste", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/gpt-taste" },
+    { "name": "high-end-visual-design", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/high-end-visual-design" },
+    { "name": "industrial-brutalist-ui", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/industrial-brutalist-ui" },
+    { "name": "minimalist-ui", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/minimalist-ui" },
+    { "name": "redesign-existing-projects", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/redesign-existing-projects" },
+    { "name": "stitch-design-taste", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/stitch-design-taste" },
+    { "name": "ui-ux-pro-max", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/ui-ux-pro-max" },
+    { "name": "brandkit", "category": "image-brand-generation", "target": "agents", "path": "skills/image-brand-generation/brandkit" },
+    { "name": "image-to-code", "category": "image-brand-generation", "target": "agents", "path": "skills/image-brand-generation/image-to-code" },
+    { "name": "imagegen-frontend-mobile", "category": "image-brand-generation", "target": "agents", "path": "skills/image-brand-generation/imagegen-frontend-mobile" },
+    { "name": "imagegen-frontend-web", "category": "image-brand-generation", "target": "agents", "path": "skills/image-brand-generation/imagegen-frontend-web" },
+    { "name": "echo-experiment-memory", "category": "tools-productivity", "target": "codex", "path": "skills/tools-productivity/echo-experiment-memory" },
+    { "name": "find-skills", "category": "tools-productivity", "target": "agents", "path": "skills/tools-productivity/find-skills" },
+    { "name": "officecli", "category": "tools-productivity", "target": "agents", "path": "skills/tools-productivity/officecli" }
+  ]
+}
