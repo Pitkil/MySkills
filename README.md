@@ -15,6 +15,12 @@ The built-in Codex system skills from `~/.codex/skills/.system` are intentionall
 
 ## Categories
 
+## Additional Video Workflow Collection
+
+The original 25 standalone skills remain unchanged. An additional pinned collection is available at [collections/video-paper-workflow](collections/video-paper-workflow/README.md), with source commits, file hashes, and upstream licenses. It is a separate archive and is not automatically installed by the restore scripts. One unlicensed source is indexed by link only. No private experiment data is included.
+
+## Original Skill Categories
+
 | Category | Purpose | Skills |
 | --- | --- | --- |
 | `academic-research` | Research, literature review, academic writing, paper review, and full research-to-paper workflows. | `academic-paper`, `academic-paper-reviewer`, `academic-pipeline`, `deep-research` |
