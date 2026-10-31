@@ -50,11 +50,13 @@ The pinned historical collection is available at [collections/video-paper-workfl
 Clone the repository:
 
 ```bash
-git clone https://github.com/Pitkil/MySkills.git
+git -c core.longpaths=true clone https://github.com/Pitkil/MySkills.git
 cd MySkills
 ```
 
 On Windows PowerShell:
+
+The clone command enables long paths for the bundled upstream collections on Windows. If an existing clone reported `Filename too long`, enable it locally with `git config core.longpaths true`, then restore only the missing files after preserving any local edits.
 
 ```powershell
 .\install.ps1
