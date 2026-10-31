@@ -1,0 +1,5 @@
+interface:
+  display_name: "Fresh Cartoon Frontend"
+  short_description: "清新、克制、带卡通温度的高完成度前端设计"
+  brand_color: "#167C80"
+  default_prompt: "Use $fresh-cartoon-frontend to redesign this interface with a fresh, calm, lightly cartooned visual language while preserving its functionality."

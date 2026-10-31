@@ -6,7 +6,7 @@ Repository: [Pitkil/MySkills](https://github.com/Pitkil/MySkills)
 
 ## What Is Included
 
-This repo contains 25 non-system skills collected from:
+The current snapshot (2026-10-31) contains **46 standalone skills and 11 complete packages**, totaling **579 SKILL.md files**, collected from:
 
 - `~/.agents/skills`
 - `~/.codex/skills`
@@ -15,9 +15,25 @@ The built-in Codex system skills from `~/.codex/skills/.system` are intentionall
 
 ## Categories
 
+See [CATALOG.md](CATALOG.md) for the current categorized index and package list. [inventory.json](inventory.json) records archived file hashes and repeated skill names. Hashes normalize CRLF to LF for UTF-8 text so verification also works after a cross-platform Git clone.
+
+### ASu-skills
+
+Installed and archived all nine entries of [Hisn00w/ASu-skills](https://github.com/Hisn00w/ASu-skills) at upstream commit `d27fd2a3864c48472a5c8ed942410098ba9cd35f` (MIT): `contributor`, `evidence-recap`, `project-guide`, `great-resume`, `make-resume`, `job-match`, `job-apply`, `interview`, `offer`.
+
+The complete package is stored in `collections/installed-packages/asu-skills` and restored to `~/.codex/skills/asu-skills`, including shared templates, scripts, references and license. This is a filesystem skill installation, not a registration in the app's plugin manager.
+
+### Organization policy
+
+- Preserve upstream package boundaries and relative resource paths.
+- Reuse identical pinned packages from the existing collection instead of creating duplicate copies.
+- Index the 111 repeated names by package and variant; do not silently delete or replace active local variants.
+- Exclude system-managed skills, plugin caches, environment credentials, private keys, databases and runtime caches.
+- Retain each upstream license; do not apply a blanket license to the collection.
+
 ## Additional Video Workflow Collection
 
-The original 25 standalone skills remain unchanged. An additional pinned collection is available at [collections/video-paper-workflow](collections/video-paper-workflow/README.md), with source commits, file hashes, and upstream licenses. It is a separate archive and is not automatically installed by the restore scripts. One unlicensed source is indexed by link only. No private experiment data is included.
+The pinned historical collection is available at [collections/video-paper-workflow](collections/video-paper-workflow/README.md), with source commits, file hashes, and upstream licenses. The current restore manifest reuses the ten packages from that collection that are currently installed locally. Other historical entries are not automatically installed. One unlicensed source remains indexed by link only.
 
 ## Original Skill Categories
 
@@ -50,7 +66,21 @@ On macOS or Linux:
 bash install.sh
 ```
 
-By default, existing skill folders are skipped. To overwrite them:
+Python 3.10 or newer is required. Preview or validate the archive before restoring:
+
+```powershell
+.\install.ps1 -DryRun
+.\install.ps1 -Check
+.\install.ps1 -Only asu-skills
+```
+
+```bash
+bash install.sh --dry-run
+bash install.sh --check
+bash install.sh --only asu-skills
+```
+
+By default, existing skill folders are skipped. With `-Force` / `--force`, the previous folder is moved to a dated `~/.codex/skill-backups/` directory before restoring:
 
 ```powershell
 .\install.ps1 -Force
@@ -62,7 +92,7 @@ bash install.sh --force
 
 ## Install Targets
 
-The restore scripts use `skills-manifest.json` to install each skill to its original runtime home:
+The restore scripts use `skills-manifest.json` (standalone `skills` plus complete `packages`) to install each item to its original runtime home:
 
 | Manifest target | Destination |
 | --- | --- |

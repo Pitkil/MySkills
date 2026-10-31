@@ -1,6 +1,6 @@
 {
-  "schema": 1,
-  "updated": "2026-08-24",
+  "schema": 2,
+  "updated": "2026-10-31",
   "layout": "skills/<category>/<skill-name>",
   "defaultTargets": {
     "agents": "~/.agents/skills",
@@ -11,33 +11,367 @@
     "writing-language": "Copywriting, Chinese text humanization, README writing, and long-form output control.",
     "frontend-ui-design": "Frontend design, UI polish, design systems, web redesigns, and style-specific interface guidance.",
     "image-brand-generation": "Image-led design direction, brand-kit generation, mobile/web visual references, and image-to-code workflows.",
-    "tools-productivity": "Utility skills for skill discovery, Office CLI work, and project-specific operational memory."
+    "tools-productivity": "Utility skills for skill discovery, Office CLI work, and project-specific operational memory.",
+    "career-job-search": "Resume preparation, career evidence, interviews, and job application workflows."
   },
   "skills": [
-    { "name": "academic-paper", "category": "academic-research", "target": "agents", "path": "skills/academic-research/academic-paper" },
-    { "name": "academic-paper-reviewer", "category": "academic-research", "target": "agents", "path": "skills/academic-research/academic-paper-reviewer" },
-    { "name": "academic-pipeline", "category": "academic-research", "target": "agents", "path": "skills/academic-research/academic-pipeline" },
-    { "name": "deep-research", "category": "academic-research", "target": "agents", "path": "skills/academic-research/deep-research" },
-    { "name": "copywriting", "category": "writing-language", "target": "agents", "path": "skills/writing-language/copywriting" },
-    { "name": "full-output-enforcement", "category": "writing-language", "target": "agents", "path": "skills/writing-language/full-output-enforcement" },
-    { "name": "humanizer-zh", "category": "writing-language", "target": "agents", "path": "skills/writing-language/humanizer-zh" },
-    { "name": "premium-readme", "category": "writing-language", "target": "codex", "path": "skills/writing-language/premium-readme" },
-    { "name": "design-taste-frontend", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/design-taste-frontend" },
-    { "name": "design-taste-frontend-v1", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/design-taste-frontend-v1" },
-    { "name": "frontend-design", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/frontend-design" },
-    { "name": "gpt-taste", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/gpt-taste" },
-    { "name": "high-end-visual-design", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/high-end-visual-design" },
-    { "name": "industrial-brutalist-ui", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/industrial-brutalist-ui" },
-    { "name": "minimalist-ui", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/minimalist-ui" },
-    { "name": "redesign-existing-projects", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/redesign-existing-projects" },
-    { "name": "stitch-design-taste", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/stitch-design-taste" },
-    { "name": "ui-ux-pro-max", "category": "frontend-ui-design", "target": "agents", "path": "skills/frontend-ui-design/ui-ux-pro-max" },
-    { "name": "brandkit", "category": "image-brand-generation", "target": "agents", "path": "skills/image-brand-generation/brandkit" },
-    { "name": "image-to-code", "category": "image-brand-generation", "target": "agents", "path": "skills/image-brand-generation/image-to-code" },
-    { "name": "imagegen-frontend-mobile", "category": "image-brand-generation", "target": "agents", "path": "skills/image-brand-generation/imagegen-frontend-mobile" },
-    { "name": "imagegen-frontend-web", "category": "image-brand-generation", "target": "agents", "path": "skills/image-brand-generation/imagegen-frontend-web" },
-    { "name": "echo-experiment-memory", "category": "tools-productivity", "target": "codex", "path": "skills/tools-productivity/echo-experiment-memory" },
-    { "name": "find-skills", "category": "tools-productivity", "target": "agents", "path": "skills/tools-productivity/find-skills" },
-    { "name": "officecli", "category": "tools-productivity", "target": "agents", "path": "skills/tools-productivity/officecli" }
+    {
+      "name": "academic-paper",
+      "category": "academic-research",
+      "target": "agents",
+      "path": "skills/academic-research/academic-paper"
+    },
+    {
+      "name": "academic-paper-reviewer",
+      "category": "academic-research",
+      "target": "agents",
+      "path": "skills/academic-research/academic-paper-reviewer"
+    },
+    {
+      "name": "academic-pipeline",
+      "category": "academic-research",
+      "target": "agents",
+      "path": "skills/academic-research/academic-pipeline"
+    },
+    {
+      "name": "automate",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/automate"
+    },
+    {
+      "name": "babysit",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/babysit"
+    },
+    {
+      "name": "brandkit",
+      "category": "image-brand-generation",
+      "target": "agents",
+      "path": "skills/image-brand-generation/brandkit"
+    },
+    {
+      "name": "canvas",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/canvas"
+    },
+    {
+      "name": "copywriting",
+      "category": "writing-language",
+      "target": "agents",
+      "path": "skills/writing-language/copywriting"
+    },
+    {
+      "name": "create-hook",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/create-hook"
+    },
+    {
+      "name": "create-rule",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/create-rule"
+    },
+    {
+      "name": "create-skill",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/create-skill"
+    },
+    {
+      "name": "create-subagent",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/create-subagent"
+    },
+    {
+      "name": "deep-research",
+      "category": "academic-research",
+      "target": "agents",
+      "path": "skills/academic-research/deep-research"
+    },
+    {
+      "name": "design-taste-frontend",
+      "category": "frontend-ui-design",
+      "target": "agents",
+      "path": "skills/frontend-ui-design/design-taste-frontend"
+    },
+    {
+      "name": "design-taste-frontend-v1",
+      "category": "frontend-ui-design",
+      "target": "agents",
+      "path": "skills/frontend-ui-design/design-taste-frontend-v1"
+    },
+    {
+      "name": "find-skills",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/find-skills"
+    },
+    {
+      "name": "frontend-design",
+      "category": "frontend-ui-design",
+      "target": "agents",
+      "path": "skills/frontend-ui-design/frontend-design"
+    },
+    {
+      "name": "full-output-enforcement",
+      "category": "writing-language",
+      "target": "agents",
+      "path": "skills/writing-language/full-output-enforcement"
+    },
+    {
+      "name": "gpt-taste",
+      "category": "frontend-ui-design",
+      "target": "agents",
+      "path": "skills/frontend-ui-design/gpt-taste"
+    },
+    {
+      "name": "high-end-visual-design",
+      "category": "frontend-ui-design",
+      "target": "agents",
+      "path": "skills/frontend-ui-design/high-end-visual-design"
+    },
+    {
+      "name": "humanizer",
+      "category": "writing-language",
+      "target": "agents",
+      "path": "skills/writing-language/humanizer"
+    },
+    {
+      "name": "humanizer-zh",
+      "category": "writing-language",
+      "target": "agents",
+      "path": "skills/writing-language/humanizer-zh"
+    },
+    {
+      "name": "image-to-code",
+      "category": "image-brand-generation",
+      "target": "agents",
+      "path": "skills/image-brand-generation/image-to-code"
+    },
+    {
+      "name": "imagegen-frontend-mobile",
+      "category": "image-brand-generation",
+      "target": "agents",
+      "path": "skills/image-brand-generation/imagegen-frontend-mobile"
+    },
+    {
+      "name": "imagegen-frontend-web",
+      "category": "image-brand-generation",
+      "target": "agents",
+      "path": "skills/image-brand-generation/imagegen-frontend-web"
+    },
+    {
+      "name": "industrial-brutalist-ui",
+      "category": "frontend-ui-design",
+      "target": "agents",
+      "path": "skills/frontend-ui-design/industrial-brutalist-ui"
+    },
+    {
+      "name": "loop",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/loop"
+    },
+    {
+      "name": "migrate-to-skills",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/migrate-to-skills"
+    },
+    {
+      "name": "minimalist-ui",
+      "category": "frontend-ui-design",
+      "target": "agents",
+      "path": "skills/frontend-ui-design/minimalist-ui"
+    },
+    {
+      "name": "officecli",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/officecli"
+    },
+    {
+      "name": "redesign-existing-projects",
+      "category": "frontend-ui-design",
+      "target": "agents",
+      "path": "skills/frontend-ui-design/redesign-existing-projects"
+    },
+    {
+      "name": "sdk",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/sdk"
+    },
+    {
+      "name": "shell",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/shell"
+    },
+    {
+      "name": "split-to-prs",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/split-to-prs"
+    },
+    {
+      "name": "statusline",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/statusline"
+    },
+    {
+      "name": "stitch-design-taste",
+      "category": "frontend-ui-design",
+      "target": "agents",
+      "path": "skills/frontend-ui-design/stitch-design-taste"
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "category": "frontend-ui-design",
+      "target": "agents",
+      "path": "skills/frontend-ui-design/ui-ux-pro-max"
+    },
+    {
+      "name": "update-cli-config",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/update-cli-config"
+    },
+    {
+      "name": "update-cursor-settings",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/update-cursor-settings"
+    },
+    {
+      "name": "codex-autoresearch",
+      "category": "tools-productivity",
+      "target": "codex",
+      "path": "skills/tools-productivity/codex-autoresearch"
+    },
+    {
+      "name": "echo-experiment-memory",
+      "category": "tools-productivity",
+      "target": "codex",
+      "path": "skills/tools-productivity/echo-experiment-memory"
+    },
+    {
+      "name": "fresh-cartoon-frontend",
+      "category": "frontend-ui-design",
+      "target": "codex",
+      "path": "skills/frontend-ui-design/fresh-cartoon-frontend"
+    },
+    {
+      "name": "nature-figure",
+      "category": "tools-productivity",
+      "target": "codex",
+      "path": "skills/tools-productivity/nature-figure"
+    },
+    {
+      "name": "premium-readme",
+      "category": "writing-language",
+      "target": "codex",
+      "path": "skills/writing-language/premium-readme"
+    },
+    {
+      "name": "research-paper-assistant",
+      "category": "tools-productivity",
+      "target": "codex",
+      "path": "skills/tools-productivity/research-paper-assistant"
+    },
+    {
+      "name": "scholarship-and-assessment",
+      "category": "tools-productivity",
+      "target": "codex",
+      "path": "skills/tools-productivity/scholarship-and-assessment"
+    }
+  ],
+  "packages": [
+    {
+      "name": "academic-research-skills",
+      "category": "academic-research",
+      "target": "codex",
+      "path": "collections/video-paper-workflow/academic-research-skills",
+      "skillCount": 5
+    },
+    {
+      "name": "ai-research-skills",
+      "category": "academic-research",
+      "target": "codex",
+      "path": "collections/video-paper-workflow/ai-research-skills",
+      "skillCount": 98
+    },
+    {
+      "name": "anthropic-frontend-design",
+      "category": "academic-research",
+      "target": "codex",
+      "path": "collections/video-paper-workflow/anthropic-frontend-design",
+      "skillCount": 1
+    },
+    {
+      "name": "aris",
+      "category": "academic-research",
+      "target": "codex",
+      "path": "collections/video-paper-workflow/aris",
+      "skillCount": 191
+    },
+    {
+      "name": "asu-skills",
+      "category": "career-job-search",
+      "target": "codex",
+      "path": "collections/installed-packages/asu-skills",
+      "skillCount": 9,
+      "source": "https://github.com/Hisn00w/ASu-skills",
+      "commit": "d27fd2a3864c48472a5c8ed942410098ba9cd35f",
+      "license": "MIT"
+    },
+    {
+      "name": "codex-claude-academic-skills",
+      "category": "academic-research",
+      "target": "codex",
+      "path": "collections/video-paper-workflow/codex-claude-academic-skills",
+      "skillCount": 24
+    },
+    {
+      "name": "frontend-slides",
+      "category": "academic-research",
+      "target": "codex",
+      "path": "collections/video-paper-workflow/frontend-slides",
+      "skillCount": 2
+    },
+    {
+      "name": "impeccable",
+      "category": "academic-research",
+      "target": "codex",
+      "path": "collections/video-paper-workflow/impeccable",
+      "skillCount": 1
+    },
+    {
+      "name": "nature-skills",
+      "category": "academic-research",
+      "target": "codex",
+      "path": "collections/video-paper-workflow/nature-skills",
+      "skillCount": 23
+    },
+    {
+      "name": "sciencedirect-live-session-fetcher",
+      "category": "academic-research",
+      "target": "codex",
+      "path": "collections/video-paper-workflow/sciencedirect-live-session-fetcher",
+      "skillCount": 2
+    },
+    {
+      "name": "scientific-agent-skills",
+      "category": "academic-research",
+      "target": "codex",
+      "path": "collections/video-paper-workflow/scientific-agent-skills",
+      "skillCount": 177
+    }
   ]
 }

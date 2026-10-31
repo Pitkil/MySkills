@@ -1,0 +1,4 @@
+# Vendored files keep upstream whitespace; do not rewrite their content on archive.
+collections/installed-packages/asu-skills/skills/contributor/agents/openai.yaml -whitespace
+skills/tools-productivity/canvas/sdk/index.d.ts -whitespace
+skills/writing-language/humanizer/README.md -whitespace
