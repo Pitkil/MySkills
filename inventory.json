@@ -1,9 +1,9 @@
 {
   "updated": "2026-10-31",
   "hashPolicy": "SHA256; UTF-8 text without NUL normalizes CRLF to LF; binary files use raw bytes",
-  "standaloneCount": 46,
+  "standaloneCount": 47,
   "packageCount": 11,
-  "skillFileCount": 579,
+  "skillFileCount": 580,
   "packages": [
     {
       "name": "academic-research-skills",
@@ -2245,6 +2245,22 @@
     {
       "path": "skills/academic-research/academic-pipeline/templates/pipeline_status_template.md",
       "sha256": "9837a2a8be21fd0fc9d2abea0f06047eec28eec2cb2fb06e69351c39332d4845"
+    },
+    {
+      "path": "skills/tools-productivity/agent-reach/SKILL.md",
+      "sha256": "60d0dffaa5355836f109959c227ba6c187075dee7fe6c65beb1fd3d18354bc67"
+    },
+    {
+      "path": "skills/tools-productivity/agent-reach/references/capabilities.md",
+      "sha256": "36105d4686493e67eb2f6d7cb47479e06bef6fbfe7159f08d3a6b64314b1cd79"
+    },
+    {
+      "path": "skills/tools-productivity/agent-reach/references/maintenance.md",
+      "sha256": "f1bc13d07c631cfe00ebaf69bc0a3243f84b2ffb905d4620c62edcd5644d61f2"
+    },
+    {
+      "path": "skills/tools-productivity/agent-reach/references/sessions.md",
+      "sha256": "433c54d462e83ff1255d4d294c4bd6457028ccf3dbbe16c325837d46c336fa0e"
     },
     {
       "path": "skills/tools-productivity/automate/SKILL.md",

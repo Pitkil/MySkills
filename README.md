@@ -6,7 +6,7 @@ Repository: [Pitkil/MySkills](https://github.com/Pitkil/MySkills)
 
 ## What Is Included
 
-The current snapshot (2026-10-31) contains **46 standalone skills and 11 complete packages**, totaling **579 SKILL.md files**, collected from:
+The current snapshot (2026-10-31) contains **47 standalone skills and 11 complete packages**, totaling **580 SKILL.md files**, collected from:
 
 - `~/.agents/skills`
 - `~/.codex/skills`
@@ -30,6 +30,10 @@ The complete package is stored in `collections/installed-packages/asu-skills` an
 - Index the 111 repeated names by package and variant; do not silently delete or replace active local variants.
 - Exclude system-managed skills, plugin caches, environment credentials, private keys, databases and runtime caches.
 - Retain each upstream license; do not apply a blanket license to the collection.
+
+### Agent Reach
+
+Installed Agent Reach 1.6.0 globally with `uv tool install` from the official GitHub release. Its skill and reference documents are archived in `skills/tools-productivity/agent-reach` and restored to `~/.agents/skills/agent-reach`. The CLI and per-channel dependencies are installed separately using the [official installation guide](https://github.com/Panniantong/Agent-Reach/blob/main/docs/install.md). Browser sessions, cookies, API keys, channel state and dependency environments are not included in this backup.
 
 ## Additional Video Workflow Collection
 

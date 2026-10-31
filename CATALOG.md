@@ -1,6 +1,6 @@
 # Installed skill catalog
 
-Snapshot: 2026-10-31. 46 standalone skills and 11 packages; 579 SKILL.md files.
+Snapshot: 2026-10-31. 47 standalone skills and 11 packages; 580 SKILL.md files.
 
 ## Standalone skills
 
@@ -34,6 +34,7 @@ Snapshot: 2026-10-31. 46 standalone skills and 11 packages; 579 SKILL.md files.
 
 ### tools-productivity
 
+- [agent-reach](skills/tools-productivity/agent-reach/SKILL.md) (agents)
 - [automate](skills/tools-productivity/automate/SKILL.md) (agents)
 - [babysit](skills/tools-productivity/babysit/SKILL.md) (agents)
 - [canvas](skills/tools-productivity/canvas/SKILL.md) (agents)

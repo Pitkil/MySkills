@@ -34,6 +34,12 @@
       "path": "skills/academic-research/academic-pipeline"
     },
     {
+      "name": "agent-reach",
+      "category": "tools-productivity",
+      "target": "agents",
+      "path": "skills/tools-productivity/agent-reach"
+    },
+    {
       "name": "automate",
       "category": "tools-productivity",
       "target": "agents",
